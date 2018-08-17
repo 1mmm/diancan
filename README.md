@@ -66,7 +66,8 @@ Such as below:<br>
 # How to use php in android(java)
 first of all import okhttp<br>
 Then<br>
-    [public String base_url="http://39.107.93.96/";
+    [
+    public String base_url="http://39.107.93.96/";
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     public class erro {
         private int errno;
@@ -114,7 +115,8 @@ Then<br>
         else {
             return response.body().string();
         }
-    }]
+    }
+    ]
 
 
 
