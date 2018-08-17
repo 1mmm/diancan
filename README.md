@@ -49,6 +49,72 @@ Just post the status as 4 the backstage will reply you a json array include all 
 Such as below:<br>
 {"errno":0,"data":[{"id":"2","name":"shousiji","desc":"haochi!","img":"xxxx","price":"100"},{"id":"3","name":"shoussssiji","desc":"haochi!","img":"xxxx","price":"100"},{"id":"4","name":"malazhu","desc":"haochi!","img":"xxxx","price":"10000"}]}<br>
 Errno is the error number.And data is the json array.<br>
+## Order table
+### data.php
+data.php has two methods.<br>
+The first is insert new order.<br>
+example:<br>
+http://39.107.93.96/data.php?status=1&uid=2&menu=4&tim=122&num=1<br>
+uid is the user's id in user table.menu is the dish id in Menu table.time is the start of waiting time.num is the number of this dish which the customer have ordered. <br>
+The second method is for pay and show.<br>
+http://39.107.93.96/data.php?status=2<br>
+Using the url above you can get all of the orders as a json array.<br>
+Such as below:<br>
+{"errno":0,"data":[{"id":"3","uid":"2","menu":"3","time":"122","num":"2"},{"id":"4","uid":"2","menu":"4","time":"122","num":"1"},{"id":"5","uid":"2","menu":"4","time":"122","num":"1"}]}<br>
+
+
+# How to use php in android(java)
+first of all import okhttp<br>
+Then<br>
+    [public String base_url="http://39.107.93.96/";
+    public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+    public class erro {
+        private int errno;
+        private String token;
+        erro(int errno,String token){
+            this.errno = errno;
+            this.token = token;
+        }
+    }
+    new Thread()
+                {
+                    @Override
+                     public void run() {
+                        try {
+                            FormBody.Builder pa=new  FormBody.Builder();
+                            pa.add("id",ans.getText().toString());
+                            pa.add("pwd",code.getText().toString());
+                            tt=post(pa,"login.php");
+                            Gson gson = new Gson();
+                            int er = gson.fromJson(tt,erro.class).errno;
+                            token1=gson.fromJson(tt,erro.class).token;
+                            if (er==0)
+                            {
+                                user=ans.getText().toString();
+                                hand.sendEmptyMessage(0);//成功登陆
+                            }
+                            else if (er==1) hand.sendEmptyMessage(1);
+                            else if (er==2) hand.sendEmptyMessage(2);
+                            else if (er==3) hand.sendEmptyMessage(3);
+                        }
+                        catch (Exception e)
+                        {
+                            hand.sendEmptyMessage(2);
+                        }
+                    }
+                }.start();
+    private final OkHttpClient client = new OkHttpClient();
+        String post(FormBody.Builder pa,String UR) throws Exception {
+        Request request = new Request.Builder()
+                .url(base_url+UR)
+                .post(pa.build())
+                .build();
+        Response response = client.newCall(request).execute();
+        if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
+        else {
+            return response.body().string();
+        }
+    }]
 
 
 
