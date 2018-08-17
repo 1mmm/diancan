@@ -65,7 +65,7 @@ Such as below:<br>
 
 # How to use php in android(java)
 first of all import okhttp<br>
-Then<br>
+Then（login.php 's example)<br>
  ```
     public String base_url="http://39.107.93.96/";
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
