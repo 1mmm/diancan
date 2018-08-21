@@ -18,9 +18,9 @@ But if your password is incorrect ,you will recive a reply below:<br>
 {"errno":2,"token":0}<br>
 ### registor.php
 registor.php is called by users who wants to register a account of this app.<br>
-You need to post/get nichen('id' of login.php),code('pwd' of login.php),and some private information such as age,lastname and firstname.<br>
+You need to post/get nichen('id' of login.php),code('pwd' of login.php),and some private information such as age,lastname and firstname.After all,you should give the user's level an inition data.<br>
 example:<br>
-http://39.107.93.96/registor.php?nichen=1mmm&code=7539100&lastname=chen&firstname=hongkai&age=100<br>
+http://39.107.93.96/registor.php?nichen=1mmm&code=7539100&lastname=chen&firstname=hongkai&age=100&level=1<br>
 The url above shows that you wants to registe an account named 1mmm with password 7539100 which is owned by chen hongkai.<br>
 ## Menu table 
 ### cdata.php
