@@ -20,8 +20,11 @@ But if your password is incorrect ,you will recive a reply below:<br>
 registor.php is called by users who wants to register a account of this app.<br>
 You need to post/get nichen('id' of login.php),code('pwd' of login.php),and some private information such as age,lastname and firstname.After all,you should give the user's level an inition data.<br>
 example:<br>
-http://39.107.93.96/registor.php?nichen=1mmm&code=7539100&lastname=chen&firstname=hongkai&age=100&level=1<br>
+http://39.107.93.96/registor.php?type=1&nichen=1mmm&code=7539100&lastname=chen&firstname=hongkai&age=100&level=1<br>
 The url above shows that you wants to registe an account named 1mmm with password 7539100 which is owned by chen hongkai.<br>
+I also provide you another method to update the user tabel,example:<br>
+http://39.107.93.96/registor.php?type=2&nichen=1mmm&lastname=chen&firstname=hongkai&age=100<br>
+The url above shows that you wants to update an account named 1mmm which is owned by chen hongkai who's age is 100.<br>
 ## Menu table 
 ### cdata.php
 cdata.php is just for menu.<br>
