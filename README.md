@@ -9,7 +9,7 @@ example:<br>
 if you print this to you browser.<br>
 http://39.107.93.96/login.php?id=1mmm&pwd=7539100<br>
 you will get backstage reply <br>
-{"errno":0,"token":"MW1tbQ=="}<br><br>
+{"errno":0,"token":"MW1tbQ==","level":"1","lastname":"chen","FirstName":"hhhongkai","Age":"100"}<br><br>
 http://39.107.93.96/login.php?id=1mm&pwd=7539100<br>
 if your id is not exist，you will recive a reply like this:<br>
 {"errno":1,"token":0}<br><br>
