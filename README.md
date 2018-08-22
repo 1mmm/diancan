@@ -28,7 +28,7 @@ The url above shows that you wants to update an account named 1mmm which is owne
 ## Menu table 
 ### cdata.php
 cdata.php is just for menu.<br>
-It have four uses.<br>
+It has four uses.<br>
 #### 1.Insert new dishes information.
 You need to post/get the dishes' name,price,some description and the photos of this dishes which is encoded as base64.<br>
 example:<br>
