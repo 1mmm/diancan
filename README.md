@@ -32,12 +32,12 @@ It has four uses.<br>
 #### 1.Insert new dishes information.
 You need to post/get the dishes' name,price,some description and the photos of this dishes which is encoded as base64.<br>
 example:<br>
-http://39.107.93.96/cdata.php?status=1&name=shousiji&price=100&descr=haochi!&img=xxxx<br>
+http://39.107.93.96/cdata.php?status=1&name=shousiji&price=100&desc=haochi!&img=xxxx<br>
 You choose the method 1(status=1) and the name of this dish is shousiji.It's price is 100 and we describe it as haochi!<br>
 #### 2.Update one of the old dishes. 
 You need to post/get the dishes' name,price,some description and the photos of this dishes which is encoded as base64.<br>
 And after all,you should point out the id of this dish which you want to updata.<br>
-http://39.107.93.96/cdata.php?status=2&name=shousiji&price=1000&descr=haochi!&img=xxxx&id=1<br>
+http://39.107.93.96/cdata.php?status=2&name=shousiji&price=1000&desc=haochi!&img=xxxx&id=1<br>
 You see we updata the price from 100 to 1000.And we point out what we updata is the first recording.<br>
 #### 3.Delete one of the old dishes. 
 you should point out the id of this dish which you want to delete.<br>
