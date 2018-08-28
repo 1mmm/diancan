@@ -29,6 +29,10 @@ http://39.107.93.96/registor.php?type=3<br>
 The url above is to show all of the app's user.<br>
 backstage will reply you a json list like this :<br>
 {"errno":0,"data":[{"id":"1","lastname":"chen","firstname":"hongkai","age":"100","nichen":"1mmm","code":"7539100","level":"1"},{"id":"2","lastname":"chen","firstname":"hongkai","age":"100","nichen":"2mmm","code":"7539100","level":"1"},{"id":"3","lastname":"unknown","firstname":"unknown","age":"100","nichen":"a","code":"a","level":"1"},{"id":"4","lastname":"chen","firstname":"hongkai","age":"100","nichen":"gm","code":"7539100","level":"5"},{"id":"5","lastname":"chen","firstname":"hongkai","age":"100","nichen":"syd","code":"7539100","level":"2"},{"id":"6","lastname":"1","firstname":"1","age":"1","nichen":"gmsy","code":"123456","level":"2"},{"id":"7","lastname":"1","firstname":"1","age":"1","nichen":"gmhc","code":"123456","level":"3"},{"id":"8","lastname":"1","firstname":"1","age":"1","nichen":"gmct","code":"123456","level":"4"}]}<br>
+http://39.107.93.96/registor.php?type=4&nichen=yy&level=4.<br>
+The url above is to change the app's user's level to 4 whose name is yy.<br>
+http://39.107.93.96/registor.php?type=5&nichen=yy.<br>
+The url above is to delete the app's user whose name is yy.<br>
 ## Menu table 
 ### cdata.php
 cdata.php is just for menu.<br>
