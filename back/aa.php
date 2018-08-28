@@ -7,7 +7,7 @@ if (!$con)
 
 mysql_select_db("my_db", $con);
 
-$sql="INSERT INTO persons (FirstName, LastName, Age)
+$sql="INSERT INTO persons (FirstName, LastName, Age £¬code ,level,nichen)
 VALUES
 ('$_REQUEST[firstname]','$_REQUEST[lastname]','$_REQUEST[age]')";
 mysql_query($sql,$con);

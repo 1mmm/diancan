@@ -11,7 +11,7 @@ $result = mysql_query("SELECT * FROM persons ");
 
 while($row = mysql_fetch_array($result))
   {
-  echo $row['nichen'] . " ".$row['FirstName'] . " " . $row['LastName']. " " .$row['Age']." ".$row['code'];
+  echo $row['nichen'] . " ".$row['FirstName'] . " " . $row['LastName']. " " .$row['Age']." ".$row['code']." ".$row['level'];
   echo "<br />";
   }
 

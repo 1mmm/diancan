@@ -25,6 +25,7 @@ CREATE TABLE `persons` (
   `Age` text NOT NULL,
   `nichen` text NOT NULL,
   `code` text NOT NULL,
+  `level` int(11) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
