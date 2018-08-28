@@ -1,6 +1,8 @@
 # diancan
 This backstage provide three tables.<br>
-backstage address is http://39.107.93.96/
+backstage address is http://39.107.93.96/<br>
+apk release:http://39.107.93.96/download/app-release.apk<br>
+
 ## User table
 ### login.php
 login.php is called by users who have registed before.<br>
