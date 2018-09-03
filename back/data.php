@@ -15,6 +15,12 @@ if ($c==1)
 	$sqld="INSERT INTO data (uid,menu,time,num)
 	VALUES ('$a','$b','$e','$r')";
 }
+if ($c==3)
+{
+	$a=$_REQUEST["id"];
+	$sqld="delete from data  where id='$a'";
+
+}
 if ($c==2)
 {
 	$a=$_REQUEST["uid"];
@@ -36,7 +42,7 @@ else if (mysql_query($sqld,$con))
 }
 else 
 {
-	echo mysql_error();
+
 	$d=array('errno' =>1);
 }
 echo json_encode($d);

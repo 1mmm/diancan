@@ -15,15 +15,15 @@ if($row = mysql_fetch_array($sql))
 {
 if ($row['code']==$c)
 {
-    $d=array('errno' =>0,"token" => base64_encode($b));
+    $d=array('errno' =>0,"token" => base64_encode($b),"level" =>$row['level'],"lastname" =>$row['LastName'],"FirstName" =>$row['FirstName'],"Age" =>$row['Age']);
    
 
 }else{
-    $d=array('errno' =>2,"token" =>0);
+    $d=array('errno' =>2,"token" =>0,"level" =>0);
 };
 }
 else{
-$d=array('errno' =>1,"token" =>0);
+$d=array('errno' =>1,"token" =>0,"level" =>0);
 }
 echo json_encode($d);
 mysql_close($con)

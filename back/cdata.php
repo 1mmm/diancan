@@ -46,11 +46,11 @@ if ($b==4)
 }
 else if (mysql_query($sql,$con))
 {
-	$d=array('errno' =>0);
+	$d=array('errno' =>0,'id'=>mysql_insert_id());
 }
 else 
 {
-	echo mysql_error();
+
 	$d=array('errno' =>1);
 }
 echo json_encode($d);
