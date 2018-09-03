@@ -74,6 +74,8 @@ http://39.107.93.96/data.php?status=2<br>
 Using the url above you can get all of the orders as a json array.<br>
 Such as below:<br>
 {"errno":0,"data":[{"id":"3","uid":"2","menu":"3","time":"122","num":"2"},{"id":"4","uid":"2","menu":"4","time":"122","num":"1"},{"id":"5","uid":"2","menu":"4","time":"122","num":"1"}]}<br>
+The third method is to delete.<br>
+http://39.107.93.96/data.php?status=3&id=2<br>
 
 
 # How to use php in android(java)
