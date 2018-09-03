@@ -55,8 +55,8 @@ http://39.107.93.96/cdata.php?status=3&id=1<br>
 We choose the method 3 and we delete the first recording we just insert.<br>
 #### 4.Show the whole menu. 
 It's funny.<br>
-We you insert or update so many recordings.<br>
-If you wabt to show the whole menu,what should we do?<br>
+When you insert or update so many recordings.<br>
+If you want to show the whole menu,what should we do?<br>
 http://39.107.93.96/cdata.php?status=4<br>
 Just post the status as 4 the backstage will reply you a json array include all dishes.<br>
 Such as below:<br>
