@@ -67,7 +67,7 @@ Errno is the error number.And data is the json array.<br>
 data.php has two methods.<br>
 The first is insert new order.<br>
 example:<br>
-http://39.107.93.96/data.php?status=1&uid=2&menu=4&tim=122&num=1<br>
+http://39.107.93.96/data.php?status=1&uid=2&menu=4&tim=2018-06-04 22:22:22&num=1<br>
 uid is the user's id in user table.menu is the dish id in Menu table.time is the start of waiting time.num is the number of this dish which the customer have ordered. <br>
 The second method is for pay and show.<br>
 http://39.107.93.96/data.php?status=2<br>
