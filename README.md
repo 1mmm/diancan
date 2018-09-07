@@ -78,7 +78,7 @@ The third method is to delete.<br>
 http://39.107.93.96/data.php?status=3&id=2<br>
 
 
-# How to use php in android(java)
+# How to post to php in android(java)
 first of all import okhttp<br>
 Then（login.php 's example)<br>
  ```
