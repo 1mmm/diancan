@@ -1,6 +1,6 @@
 # diancan
 This backstage provide three tables.<br>
-backstage address is http://39.107.93.96/<br>
+backstage address is http://139.196.79.25/<br> 
 apk release:http://39.107.93.96/download/app-release.apk<br>
 
 ## User table
